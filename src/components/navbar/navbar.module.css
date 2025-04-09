@@ -1,0 +1,150 @@
+.nav_container{
+    width: 100%;
+    padding: 2.25rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_left{
+    display: flex;
+    align-items: center;
+    grid-gap: 0.5rem;
+}
+
+.hamburger_wrapper{
+    display: none;
+}
+
+.brand_logo_wrapper_web{
+    display: block;
+}
+
+.brand_logo_wrapper_mob{
+    display: none;
+}
+
+.brand_name_heading{
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.nav_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 2rem;
+}
+
+.lang_wrapper{
+    display: flex;
+    align-items: center;
+    grid-gap: 0.5rem;
+}
+
+.lang_wrapper > span {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+
+/* SUB NAVBAR STYLE */
+.tabs_wrapper{
+    display: flex;
+    grid-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+
+.tabs_wrapper > span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+  display: inline-block;
+}
+.tabs_wrapper > span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* adjust based on your design */
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.tabs_wrapper > span:hover::after {
+    transform: scaleX(1);
+  }
+
+
+/* FOR MOBILE */
+@media (max-width:767px) {
+.nav_container{
+    padding: 1rem;
+    border-bottom: 1px solid #E5E5E5 ;
+}
+
+.brand_name_heading{
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+.nav_right{
+    grid-gap: 0.5rem;
+}
+
+.profile_wrapper{
+    display: none;
+}
+
+.lang_wrapper{
+    display: none;
+}
+
+.hamburger_wrapper{
+    display: block;
+}
+
+.brand_logo_wrapper_mob{
+    display: block;
+}
+
+.brand_logo_wrapper_web{
+    display: none;
+}
+
+.tabs_wrapper {
+    display: none;
+}
+}
+
+
+/* FOR TABLET */
+@media (min-width: 768px) and (max-width: 1024px){
+    .nav_container{
+        padding: 1rem 2rem;
+    }
+
+    .tabs_wrapper{
+        padding: 1rem 2rem;
+        grid-gap: 2rem;
+    }
+
+    .tabs_wrapper > span{
+        font-size: 1rem;
+    }
+}

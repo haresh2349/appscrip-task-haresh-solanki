@@ -1,0 +1,118 @@
+.products_container{
+    padding: 2rem 4rem;
+}
+
+.products_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+.products_header_left{
+    display: flex;
+    align-items: center;
+    grid-gap: 3rem;
+}
+.products_header_left_mob{
+    display: none;
+}
+
+.products_header_left > p {
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.filter_conterller{
+    display: flex;
+    align-items: center;
+    grid-gap: 0.5rem;
+    justify-content: center;
+}
+
+.filter_conterller > span{
+    font-family: Adobe Caslon Pro;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    letter-spacing: 0px;
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    color: #888792;
+}
+
+.mob_vr_line{
+    display: none;
+}
+
+.products_header_right {
+    position: relative;
+    display: inline-block;
+}
+
+.sort_conterller {
+    display: flex;
+    align-items: center;
+    grid-gap: 0.5rem;
+    cursor: pointer;
+}
+
+.sort_conterller > span{
+    font-family: Simplon Norm;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.products_section{
+    padding: 1rem 0rem;
+    display: flex;
+}
+
+
+@media (max-width: 767px) {
+    .products_container{
+        padding: 0rem 1rem;
+    }
+
+    .products_header{
+        padding: 0rem 1rem;
+    }
+
+    .products_header_left{
+        display: none;
+    }
+    .products_header_left_mob{
+        display: block;
+        width: 45%;
+        text-align: center;
+    }
+
+    .products_header_left_mob > span{
+        font-family: Simplon Norm;
+        font-weight: 700;
+        font-size: 0.9rem;
+        line-height: 40px;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+    }
+
+    .mob_vr_line{
+        display: block;
+        border: 1px solid #E5E5E5;
+        height: 25px;
+    }
+
+    .sort_conterller > span{
+        font-size: 0.9rem;
+        line-height: 100%;
+        letter-spacing: 0px;
+        text-transform: uppercase;
+    }
+}
