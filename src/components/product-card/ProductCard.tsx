@@ -12,8 +12,9 @@ export const ProductCard = ({product}:{product:SingleProduct}) => {
             <WishlistIcon/>
         </div>
         <p>{'₹ '}{product?.price}</p>
-        <div className={Styles.no_product}>
+        {/* //just random product to show "OUT OF STOCK" */}
+        {product?.id == "3" && <div className={Styles.no_product}> 
             <p>OUT OF STOCK</p>
-        </div>
+        </div>}
     </div>
 } 

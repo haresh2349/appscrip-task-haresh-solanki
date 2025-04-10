@@ -65,5 +65,14 @@
 
 }
 @media (max-width:767px) {
-    
+
+    .title{
+        font-size: 0.8rem;
+    }
+    .no_product {
+        padding: 0.5rem;
+    }
+    .no_product > p{
+        font-size: 0.8rem;
+    }
 }

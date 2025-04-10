@@ -1,4 +1,4 @@
-import { SiteLogo } from "@/resources/site-logo"
+import { SiteLogo } from "@/resources/SiteLogo"
 import Styles from "./navbar.module.css"
 import { WishlistIcon } from "@/resources/WishlistIcon"
 import { SearchIcon } from "@/resources/SearchIcon"
@@ -7,7 +7,6 @@ import { BagIcon } from "@/resources/BagIcon"
 import { DownAngleIcon } from "@/resources/DownAngleIcon"
 import { HamBurgure } from "@/resources/Hamburgure"
 export const Navbar = () => {
-    const tabs = ["SHOP","SKILLS","STORIES","ABOUT","CONTACT US"]
 
     return (
         <nav className={Styles.nav_container}>
@@ -22,13 +21,13 @@ export const Navbar = () => {
                         <SiteLogo/>
                     </div>
                 </div>
-                <h1 className={Styles.brand_name_heading}>BAG HOUSE</h1>
+                <h1 className={Styles.brand_name_heading}>MY STORE</h1>
                 <meta 
                     name="description" 
                     content="Browse our curated collection of high-quality bags. Luxury handbags, backpacks, and travel accessories with free shipping." 
                 />
-                <meta property="og:title" content="Premium Bags Collection | YourStoreName" />
-                <meta property="og:description" content="Browse our curated collection of high-quality bags" />
+                <meta property="og:title" content="Premium Collection | myStore" />
+                <meta property="og:description" content="Browse our curated collection of high-quality products" />
             <div className={Styles.nav_right}>
                 <SearchIcon/>
                 <WishlistIcon/>

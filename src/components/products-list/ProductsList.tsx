@@ -6,11 +6,10 @@ interface ProductListProps {
     isFilters:boolean;
 }
 export const ProductsList = ({products,isFilters}:ProductListProps) => {
-    console.log(products,"products")
     return <div className={`${Styles.container} ${isFilters ? Styles?.three_row : Styles.four_row}`}>
         {
             products?.map(product => {
-                return <ProductCard product={product}/>
+                return <ProductCard key={product?.id} product={product}/>
             })
         }
     </div>
