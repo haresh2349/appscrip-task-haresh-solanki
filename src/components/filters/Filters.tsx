@@ -3,8 +3,6 @@ import Styles from "./filters.module.css"
 import { useState } from "react"
 import { DownAngleIcon } from "@/resources/DownAngleIcon"
 import { FILTERS_DATA } from "./filters.service"
-import { emit } from "process"
-import { SelectedFilters } from "@/types/filter-sort-options.types"
 
 interface FiltersProps {
     filters:Record<string,string[]>;

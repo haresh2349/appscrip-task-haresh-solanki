@@ -37,10 +37,11 @@
     text-overflow:ellipsis;
     font-family: Simplon Norm;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 18px;
     line-height: 100%;
     letter-spacing: 0px;
     text-transform: uppercase;
+    color: #252020;
 }
 
 .no_product{
@@ -55,6 +56,21 @@
     align-items: center;
 }
 
+.helper_text{
+    font-family: Simplon Norm;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-decoration-style: solid;
+    color: #888792;
+
+}
+
+.helper_text > span {
+    text-decoration: underline;
+    cursor: pointer;
+}
 .no_product > p {
     font-family: Simplon Norm;
     font-weight: 700;

@@ -7,7 +7,7 @@ import { BagIcon } from "@/resources/BagIcon"
 import { DownAngleIcon } from "@/resources/DownAngleIcon"
 import { HamBurgure } from "@/resources/Hamburgure"
 export const Navbar = () => {
-
+    
     return (
         <nav className={Styles.nav_container}>
                 <div className={Styles.nav_left}>
